@@ -1,6 +1,5 @@
 import React from "react"
 import Navbar from "./Navbar"
-//import Hero from "./components/Hero"
 import Card from "./Card" 
 import data from "./data"
 
