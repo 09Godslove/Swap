@@ -11,6 +11,7 @@ export default function Navbar(){
             <div className='searchBar'>
                 <input type='text'  />
             </div>
+            <button className="listBtn">List Item</button>
         </div>
     )
 }
