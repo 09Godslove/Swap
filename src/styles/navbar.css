@@ -1,0 +1,29 @@
+.logo{
+    display: flex;
+}
+.logo p{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0;
+}
+.Navbar{
+    display: flex;
+    width: 100%;
+    padding: 10px 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)
+}
+.searchBar{
+    margin: auto;
+    width: 50%;
+}
+.searchBar input{
+    width: 90%;
+    padding: 5px;
+    background-color: white;
+    border:1px solid gray;
+    color: #004953;
+    border-radius: 8px;
+}
+input:focus{
+    outline: none;
+}
