@@ -14,4 +14,9 @@
   width: 90%;
   margin: auto;
 }
-
+@media only screen and (max-width: 480px) {
+  .Cards-list{
+    flex-direction: column;
+    
+  }
+}
