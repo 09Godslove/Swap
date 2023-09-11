@@ -10,7 +10,7 @@
     display: flex;
     width: 100%;
     padding: 10px 3px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #ececec;
     margin-bottom: 1.5rem;
 }
 .searchBar{
@@ -39,5 +39,28 @@ input:focus{
 }
 .NavbarOne{
     justify-content: center;
-
+}
+.scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ececec;
+    box-shadow: none;
+}
+@media only screen and (max-width: 480px) {
+    .logo p{
+        display: none;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .searchBar{
+        width: 45%;
+        padding: 2px;
+    }
+    .listBtn{
+        padding: 10px 20px;
+        border-radius: 35px;
+    }
 }
