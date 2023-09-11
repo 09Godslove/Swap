@@ -6,7 +6,7 @@
     border-radius: 20px;
 }
 .card:hover{
-    background-color: rgb(193, 195, 195);
+    background-color: #f5f5f5;
 }
 
 .images img{
