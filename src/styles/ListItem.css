@@ -1,0 +1,30 @@
+.form{
+    margin: auto;
+    text-align: center;
+}
+.type{
+    border: 2px solid grey;
+}
+.form input{
+    width: 50%;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #004953;
+    text-wrap: wrap;
+}
+textarea {
+    width: 51%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    color: #004953;
+}
+.list{
+    margin-top: 2rem;
+}

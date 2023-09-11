@@ -3,6 +3,10 @@
     width: 20%;
     padding: 10px;
     cursor: pointer;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgb(193, 195, 195);
 }
 
 .images img{
