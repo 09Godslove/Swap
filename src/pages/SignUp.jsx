@@ -1,8 +1,8 @@
-//import React, { useState } from "react";
+//This page lets user sign up to have an account
 import Navbar from '../NavbarOne'
-import Form from '../form'
+import Form from '../SignUpForm'
 
-function ListItem(){
+function SignIn(){
 
     return(
         <>
@@ -11,4 +11,4 @@ function ListItem(){
         </>
     )
 }
-export default ListItem
+export default SignIn

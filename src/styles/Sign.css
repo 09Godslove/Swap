@@ -1,0 +1,15 @@
+.form1{
+    width: 30%;
+    margin: auto;
+    margin-top: 4rem;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #38494a;
+    padding: 3rem;
+}
+.label, .switch {
+    color: white;
+}
+.switch{
+    cursor: pointer;
+}

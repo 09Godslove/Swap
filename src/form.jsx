@@ -2,7 +2,7 @@ import { useState } from "react";
 import './styles/ListItem.css'
 
 function Form(){
-    const [file, setFile] = useState();
+    const [/*file*/, setFile] = useState();
     function handleChange(e) {
         console.log(e.target.files);
         setFile(URL.createObjectURL(e.target.files[0]));
@@ -22,6 +22,8 @@ function Form(){
             <input type="file" onChange={handleChange} />
             {//<img src={file} />
             }<br/>
+            <label>Whatsapp contact:</label><br/>
+            <input type="number" className="type" placeholder="+234" /><br/>
             <button className="listBtn list">List Item</button>
             
         </div>
