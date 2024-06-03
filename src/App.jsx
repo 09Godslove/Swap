@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import ListItem from './pages/ListItem'
 import View from './pages/View' 
 import ErrorPage from './pages/ErrorPage'
-import SignIn from './pages/Signin'
+import SignIn from './pages/SignIn'
 import SignUp from './pages/SignUp'
 
 

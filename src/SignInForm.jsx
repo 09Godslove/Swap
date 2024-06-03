@@ -22,7 +22,7 @@ function Form(){
           };
     
           const { data } = await axios.post(
-            'https://swapp-backend-6859b4c055db.herokuapp.com/api/user/admin-login',
+            'https://swapp-backend-6859b4c055db.herokuapp.com/api/user/login',
             { email, password },
             config
           );
