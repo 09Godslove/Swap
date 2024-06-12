@@ -28,3 +28,7 @@ textarea {
 .list{
     margin: 2rem 0rem;
 }
+.image{
+    width: 50%;
+    height: 50%;
+}

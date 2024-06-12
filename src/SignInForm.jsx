@@ -26,13 +26,14 @@ function Form(){
             { email, password },
             config
           );
+          console.log(data)
           setLoading(false);
           navigate("/");
         } catch (error) {
             throw new Error (error),
           setLoading(false);
         }
-      };
+    };
     let navigate = useNavigate()
     return(
         <div className="form1 form">
