@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from "./NavbarOne";
-import "./styles/View.css";
+import "./styles/view.css";
 
 function View() {
   const { id } = useParams();
