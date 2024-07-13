@@ -39,6 +39,7 @@ input:focus{
 }
 .NavbarOne{
     justify-content: center;
+    cursor: pointer;
 }
 .scrolled{
     position: fixed;

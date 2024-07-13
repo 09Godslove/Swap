@@ -1,37 +1,44 @@
-import React, { useEffect} from 'react'
-import { useNavigate } from 'react-router-dom'
-import './styles/navbar.css'
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './styles/navbar.css';
 
-export default function Navbar(){
-    let navigate = useNavigate()
-    const [scrolled,setScrolled]=React.useState(false);
-    const handleScroll=() => {
-        const offset=window.scrollY;
-        if(offset > 0.5 ){
+export default function Navbar({ searchQuery, handleSearchChange }) {
+    let navigate = useNavigate();
+    const [scrolled, setScrolled] = useState(false);
+
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 0.5) {
             setScrolled(true);
-        }
-        else{
+        } else {
             setScrolled(false);
         }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    let navbarClasses = ['Navbar'];
+    if (scrolled) {
+        navbarClasses.push('scrolled');
     }
 
-  useEffect(() => {
-    window.addEventListener('scroll',handleScroll)
-  })
-    let navbarClasses=['Navbar'];
-        if(scrolled){
-            navbarClasses.push('scrolled');
-    }
-    return(
+    return (
         <div className={navbarClasses.join(" ")}>
             <div className='logo'>
-                <img src='./src/assets/Swap-Logo.svg' alt='logo' />
+                <img src='https://res.cloudinary.com/dyzpvofax/image/upload/v1720900776/samples/Swap-Logo_cnuerm.svg' alt='logo' />
                 <p>SWAP</p>
             </div>
             <div className='searchBar'>
-                <input type='text'  />
+                <input
+                    type='text'
+                    value={searchQuery}
+                    onChange={(e) => handleSearchChange(e.target.value)}
+                />
             </div>
-            <button className="listBtn" onClick={() => {navigate('/ListItem')}} >List Item</button>
+            <button className="listBtn" onClick={() => { navigate('/ListItem') }}>List Item</button>
         </div>
-    )
+    );
 }
