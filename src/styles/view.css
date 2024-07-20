@@ -2,6 +2,7 @@
     width: 50%;
     margin: auto;
     cursor: auto;
+    border: 0px;
 }
 .swapCards:hover{
     cursor: auto;

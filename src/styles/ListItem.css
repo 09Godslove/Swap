@@ -1,6 +1,12 @@
 .form{
     margin: auto;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 .type{
     border: 2px solid grey;
@@ -31,4 +37,7 @@ textarea {
 .image{
     width: 50%;
     height: 50%;
+}
+h2{
+    font-size: medium;
 }

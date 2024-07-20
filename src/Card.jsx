@@ -12,12 +12,14 @@ export default function Card({ id, images, ...props }) {
     let urls = images[0].images
     let link = urls[0]
     return (
-        <div className="card" onClick={start}>
+        <div className="card" >
             <div className="card-content">
                 <div className='images'><img  src={link}  /></div>
                 <h2>{props.title}</h2>
                 <p>{props.description}</p>
-
+                <div className='View'>
+                    <btn className="Viewbtn" onClick={start} >View Details</btn>
+                </div>
             </div>
         </div>
     );
