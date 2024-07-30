@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import Navbar from "../Navbar";
-import Card from "../Card";
+import Cards from "../Card";
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   const [data, setData] = useState([]); // State to store the fetched data
@@ -50,7 +51,7 @@ export default function Home() {
   if (error) return <div>Error: {error.message}</div>; // Show error message if there is an error
 
   const cards = (searchQuery ? searchResults : data).map((item, index) => (
-    <Card
+    <Cards
       key={index}
       images={item.images}
       id={item._id}
@@ -61,9 +62,12 @@ export default function Home() {
   return (
     <div>
       <Navbar searchQuery={searchQuery} handleSearchChange={setSearchQuery} />
-      <section className="Cards-list">
-        {cards}
-      </section>
+      <div className='container-fluid'>
+        <div className='row'>
+          {cards}
+        </div>
+      </div>
+
     </div>
   );
 }

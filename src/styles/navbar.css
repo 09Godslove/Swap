@@ -53,6 +53,7 @@ input:focus{
     left: 0;
     background-color: #ececec;
     box-shadow: none;
+    z-index: 1;
 }
 @media only screen and (max-width: 480px) {
     .logo p{

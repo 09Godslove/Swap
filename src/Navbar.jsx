@@ -8,7 +8,7 @@ export default function Navbar({ searchQuery, handleSearchChange }) {
 
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 0.5) {
+        if (offset > 0.4) {
             setScrolled(true);
         } else {
             setScrolled(false);
